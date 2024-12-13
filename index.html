@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/all.min.css" />
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <title>Login System</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <h1>Logo</h1>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact-us</a></li>
+              <li><a class="logIn" href="#">Log-in</a></li>
+              <li><a class="signIn" href="#">Sign-up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- login box -->
+        <div class="wrapper-forms login-box mt-5">
+          <div class="login">
+            <h2 class="mb-4 text-center fs-1">Login</h2>
+
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="login-email form-control"
+                placeholder="Your email" />
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="login-pass form-control"
+                placeholder="Your password" />
+            </div>
+
+            <p class="mb-3">
+              create an account ?
+              <a href="#" class="sign-a" id="sign-a">Sign-up</a>
+            </p>
+
+            <button class="btn btn-success d-block mx-auto w-100 logBtn mb-3">
+              <a class="logBtn-l" href="#">Login</a>
+            </button>
+
+            <p class="d-none text-center text-danger err-login">
+              email or password is not exsist
+            </p>
+          </div>
+        </div>
+
+        <!-- register box -->
+        <div class="wrapper-forms register-box d-none mt-5">
+          <div class="register">
+            <h2 class="mb-4 text-center fs-1">Signup</h2>
+            <div class="form-group mb-3">
+              <label for="userName">Name</label>
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                class="form-control register-name"
+                placeholder="Your name" />
+              <p class="text-danger"></p>
+            </div>
+            <div class="form-group mb-3">
+              <label for="sign-email">Email</label>
+              <input
+                type="email"
+                id="sign-email"
+                name="sign-email"
+                class="form-control register-email"
+                placeholder="Your email" />
+              <p class="text-danger"></p>
+            </div>
+            <div class="form-group mb-3">
+              <label for="sign-password">Password</label>
+              <input
+                type="password"
+                id="sign-password"
+                name="sign-password"
+                class="register-pass form-control"
+                placeholder="Your password" />
+              <p class="text-danger"></p>
+            </div>
+            <p class="mb-3">
+              already have an acount ? <a href="#" class="login-a">Log-in</a>
+            </p>
+            <button class="btn btn-success d-block mx-auto regBtn w-100">
+              Signup
+            </button>
+            <p class="text-center succ"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- last  -->
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+
+    <!-- now -->
+    <script src="Js/index.js"></script>
+  </body>
+</html>
